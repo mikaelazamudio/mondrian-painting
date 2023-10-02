@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: grid;
+      height: 748px;
+      width: 748px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      background-color: black;
+      gap: 9px;
+    }
+    
+    .red {
+      background-color: #E72F24;
+      grid-column-start: 0px;
+      grid-column-end: span 1;
+      grid-row-start: span 1;
+      grid-row-end: span 1;
+      
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    .one {
+      grid-column-start: 2;
+      grid-column-end: span 4;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+
+    .two {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 2;
+      grid-row-end: span 2;
+    }
+
+    .three {
+      grid-column-start: 2;
+      grid-column-end: span 2;
+      grid-row-start: 2;
+      grid-row-end: span 2;
+    }
+
+    .four {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 4;
+      grid-row-end: 4;
+    }
+
+    .five {
+      grid-column-start: 4;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 5;
+    }
+
+    .blue {
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+   
+    .yellow {
+      background-color:  #F9D01E;
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 4;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="red"></div>
+
+    <div class="white one"></div>
+    <div class="white two"></div>
+    <div class="white three"></div>
+
+    <div class="blue"></div>
+
+    <div class="white four"></div>
+    <div class="white five"></div>
+
+    <div class="yellow"></div>
+
+    <div class="black"></div>
+  </div>
+
+</body>
+
+</html>
